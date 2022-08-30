@@ -1,5 +1,5 @@
 function Layout() {
-  return <main>test</main>;
+  return <div>test</div>;
 }
 
 export default Layout;

@@ -1,10 +1,15 @@
 import Navigation from "components/naviation";
+import { ReactNode } from "react";
 
-function Layout() {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+function Layout({ children }: LayoutProps) {
   return (
     <div>
       <Navigation />
-      <main>test</main>
+      <main>{children}</main>
     </div>
   );
 }

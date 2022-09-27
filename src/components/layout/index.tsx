@@ -7,7 +7,7 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <div className="flex flex-col w-full h-full">
       <Navigation />
       <main>{children}</main>
     </div>

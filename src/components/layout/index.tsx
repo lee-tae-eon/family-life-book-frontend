@@ -5,6 +5,9 @@ interface LayoutProps {
 }
 
 function Layout({ children }: LayoutProps) {
+  if (typeof window !== "undefined") {
+    console.log(navigator);
+  }
   return (
     <div>
       <Navigation />
